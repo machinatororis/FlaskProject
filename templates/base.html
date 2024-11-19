@@ -6,7 +6,7 @@
 </head>
 <body>
     <h1>Мої задачі</h1>
-    <form action="">
+    <form action="/add" method="post">
         <div>
             <label for="todo_input">Назва задачі</label>
             <input id="todo_input" type="text" name="title" placeholder="Введіть назву задачі..." />
@@ -23,6 +23,11 @@
                 <p>
                     {{todo.id}} - {{todo.title}}
                 </p>
+                {% if todo.completed == False %}
+                <span>Не виконано</span>
+                {% else %}
+                <span>Виконано</span>
+                {% endif %}
             </div>
         </div>
         {% endfor %}
