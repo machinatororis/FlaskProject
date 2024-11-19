@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Список задач</title>
+</head>
+<body>
+    <h1>Мої задачі</h1>
+    <form action="">
+        <div>
+            <label for="todo_input">Назва задачі</label>
+            <input id="todo_input" type="text" name="title" placeholder="Введіть назву задачі..." />
+            <br />
+            <button type="submit">
+                Додати
+            </button>
+        </div>
+    </form>
+    <section>
+        {% for todo in todo_list %}
+        <div>
+            <div>
+                <p>
+                    {{todo.id}} - {{todo.title}}
+                </p>
+            </div>
+        </div>
+        {% endfor %}
+    </section>
+</body>
+</html>
