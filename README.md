@@ -20,7 +20,7 @@
 
 Головна сторінка програми:
 
-![Головна сторінка](screenshots/screenshot_home.png)
+![Головна сторінка](screenshots/screenshot_home.PNG)
 
 
 Додаток створений для практики веб-розробки з використанням Flask.
